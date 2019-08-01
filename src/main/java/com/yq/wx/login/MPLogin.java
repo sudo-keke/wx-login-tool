@@ -5,8 +5,6 @@ import com.yq.wx.common.Constants;
 import com.yq.wx.util.CommonUtil;
 import com.yq.wx.util.WeiXinUtil;
 import net.sf.json.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -18,8 +16,6 @@ import org.springframework.transaction.annotation.Transactional;
  * PS : 是统一登录，包含多个小程序，以 source 区分来源
  */
 public class MPLogin {
-
-    private static Logger log = LoggerFactory.getLogger(MPLogin.class);
 
 
     /**
@@ -34,7 +30,6 @@ public class MPLogin {
      * fullUserInfo：  比较全的用户信息，里面还包了一层叫 userInfo，咱们就是为了取出里面这一层
      * source：  如果多个小程序，以 source 区分来源，单一小程序登录可以不需要，
      */
-    @Transactional
     public BaseResult login(String code, String fullUserInfo, int source) {
         BaseResult baseResult = new BaseResult();
         //全部的用户信息

@@ -97,12 +97,4 @@ public class BaseResult implements Serializable {
     }
 
 
-    public BaseResult setStatus(StatusCode statusCode) {
-        this.setCode(statusCode.getCode());
-        this.setMessage(statusCode.getMsg());
-        if (!code.equals("1")) {
-            logger.error(message);
-        }
-        return this;
-    }
 }

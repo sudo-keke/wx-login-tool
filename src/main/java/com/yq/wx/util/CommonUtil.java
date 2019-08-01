@@ -28,7 +28,7 @@ public class CommonUtil {
      * @Date : 2019/3/18
      * @Description : 登陆随机数 时间戳+8位随机数
      */
-    private static byte[] lock = new byte[0];
+    private static final byte[] lock = new byte[0];
     // 位数，默认是8位
     private final static long w = 100000000;
 
@@ -111,4 +111,7 @@ public class CommonUtil {
             return null;
         }
     }
+
+
+
 }

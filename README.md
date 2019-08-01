@@ -4,7 +4,7 @@
 
 
 #### PS : 微信开发文档会不定时更新，不能保证此代码永久适用，每次提交代码我会尽量在下面更新提交时间
-#### 更新日期 ： 2019-07-31
+#### 更新日期 ： 2019-08-01
 
 
 For further reference, please consider the following sections:

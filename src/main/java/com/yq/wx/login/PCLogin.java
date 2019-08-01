@@ -89,7 +89,7 @@ public class PCLogin {
             //获取完用户信息之后，重定向到项目的前端地址，
             response.sendRedirect(Constants.address + "/shops?code=1&userUnionId=" + unionId);
         } else {
-            //获取不到用户 登录失败
+            //获取不到用户 登录失败，code = 0
             log.info("==登录失败：" + Constants.address + "/shops?code=0");
             response.sendRedirect(Constants.address + "/shops?code=0");
         }

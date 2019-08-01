@@ -21,6 +21,13 @@ For further reference, please consider the following sections:
 
 企业：
     企业付款到零钱
+    
+    
+包结构：
+    -- bean：    封装的JavaBean
+    -- common：  公用类
+    -- util：    工具类
+    -- login：   登录代码示例
 
 ```
 
